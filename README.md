@@ -4,4 +4,13 @@
 
 A Puppet module for BSD.
 
-This module is not ready for production!
+## bsd::network:interface
+
+Declaring an interface is easy, and fun.
+
+    bsd::network::interface { 're0':
+      description => 'Primary interface',
+      values      => [ 'dhcp' ],
+    }
+
+
